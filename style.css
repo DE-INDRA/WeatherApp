@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(15, 21, 67);
+}
+.container{
+    height: 600px;
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px;
+    background-image: linear-gradient(135deg, aqua,rgb(31, 167, 220));
+    transition: all 300ms ease;
+}
+.searching{
+    height:15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main{
+    height: 85%;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.searching input{
+    font-size: 20px;
+    font-family: arial;
+    width: 250px;
+    height: 38px;
+    padding: 2px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(212, 233, 241);
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+}
+.searching input:focus{
+    outline: none;
+}
+.searching button{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius:40px;
+    border:none;
+    transition: all 300ms ease;
+}
+.searching button:hover{
+    color: white;
+    background-color: rgb(12, 12, 66);
+}
+.searching button:active{
+    background-color: rgba(21, 21, 121, 0.571);
+    border: none;
+}
+.emoji{
+    height: 50%;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+}
+.weather{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 380px;
+    bottom: 50%;
+}
+.weather p{
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: arial;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#temp{
+    font-family: arial;
+    font-size: 4em;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+#city{
+    font-size: 30px;
+    font-family: arial;
+    font-weight: 500;
+    color: aliceblue;
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    justify-content: center;
+    text-align: center;
+}
+.humidity, .wind{
+    font-size: 25px;
+    color: aliceblue;
+    font-family: arial;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.humidity p, .wind p{
+    display: inline-block;
+    padding-left: 10px;
+}
+.humidity{
+    left: 30px;
+}
+.wind{
+    right: 30px;
+}
